@@ -7,8 +7,8 @@ reducers should do 3 things:
     3. Return the default state if no action is handled
 */
 const byId = (beer_a, beer_b) => {
-  if (beer_a.id < beer_b.id) return -1
-  if (beer_a.id > beer_b.id) return 1
+  if (Number(beerA.id) < Number(beerB.id)) return -1
+  if (Number(beerA.id) > Number(beerB.id)) return 1
   return 0
 }
 
